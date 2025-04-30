@@ -1,0 +1,8 @@
+[package]
+name = "test_macro"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+solana-program = "2.2.1"
+proc_macro_impl = { path = "../proc_macro_impl" }
