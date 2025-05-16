@@ -226,6 +226,7 @@ pub fn pod_struct_de_se(input: TokenStream) -> TokenStream {
             }).collect::<Vec<_>>();
 
             let implementation = quote! {
+                #[automatically_derived]
                 impl #struct_ident {
                     #(#field_methods)*
                 }
